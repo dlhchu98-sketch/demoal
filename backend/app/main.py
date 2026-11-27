@@ -87,6 +87,9 @@ def create_app() -> FastAPI:
             )
         elapsed_ms = int((time.perf_counter() - t0) * 1000)
         response.headers["X-Process-Time-Ms"] = str(elapsed_ms)
+        # Cho phép trình duyệt gọi từ HTTPS (GitHub Pages) về Backend cục bộ (Private Network Access)
+        if request.headers.get("access-control-request-private-network") == "true":
+            response.headers["Access-Control-Allow-Private-Network"] = "true"
         return response
 
     app.include_router(api_router)

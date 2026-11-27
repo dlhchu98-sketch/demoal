@@ -154,9 +154,12 @@
     (function (ns) {
       const { api, auth, toast, esc } = ns;
 
+      const isGitHubPages = window.location.hostname.endsWith('github.io');
+      const initialAdmin = window.location.pathname.startsWith('/admin') || window.location.hash === '#admin';
+
       ns.state = {
-        portal: window.location.pathname.startsWith('/admin') ? 'admin' : 'user',
-        currentPage: window.location.pathname.startsWith('/admin') ? 'admin-dashboard' : 'home',
+        portal: initialAdmin ? 'admin' : 'user',
+        currentPage: initialAdmin ? 'admin-dashboard' : 'home',
         appMode: 'demo',
         currentUser: auth.getCachedUser(),
         activeConversationId: null,
@@ -188,8 +191,14 @@
       ns.switchPortal = function (portal) {
         ns.state.portal = portal;
         ns.state.currentPage = portal === 'admin' ? 'admin-dashboard' : 'home';
-        const targetPath = portal === 'admin' ? '/admin' : '/user';
-        try { window.history.replaceState({}, '', targetPath); } catch {}
+        try {
+          if (isGitHubPages) {
+            window.location.hash = portal === 'admin' ? '#admin' : '#user';
+          } else {
+            const targetPath = portal === 'admin' ? '/admin' : '/user';
+            window.history.replaceState({}, '', targetPath);
+          }
+        } catch {}
         ns.syncHeaderChrome();
         ns.renderCurrentPage();
       };

@@ -286,7 +286,17 @@ window.LegalApp = window.LegalApp || {};
     if (token) {
       headers['Authorization'] = `Bearer ${token}`;
     }
-    const res = await fetch(url, { ...options, headers });
+    let res;
+    try {
+      res = await fetch(url, { ...options, headers });
+    } catch (networkErr) {
+      if (IS_GITHUB_PAGES) {
+        ns.setApiBase('');
+        ns.toast('Không thể kết nối Backend URL (trình duyệt chặn HTTP từ HTTPS hoặc máy chủ chưa chạy). Tự chuyển sang chế độ xem trước tĩnh GitHub Pages.', 'warn');
+        return handleStaticPreviewApi(path, options);
+      }
+      throw networkErr;
+    }
     const data = await res.json().catch(() => ({}));
     if (!res.ok) {
       const msg = typeof data.detail === 'string' ? data.detail : `Lỗi API (${res.status})`;
