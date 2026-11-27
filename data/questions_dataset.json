@@ -1,0 +1,2809 @@
+{
+  "dataset_type": "QUESTION_DATASET_ONLY_DO_NOT_INDEX_IN_QDRANT",
+  "source_file": "Bộ câu hỏi (1).docx",
+  "total_domains": 4,
+  "total_categories": 17,
+  "total_questions": 269,
+  "domains": [
+    "DÂN SỰ",
+    "GIAO THÔNG",
+    "GIÁO DỤC",
+    "LAO ĐỘNG"
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Hợp đồng",
+      "domain": "DÂN SỰ",
+      "question_count": 16
+    },
+    {
+      "id": 2,
+      "name": "Vay nợ",
+      "domain": "DÂN SỰ",
+      "question_count": 16
+    },
+    {
+      "id": 3,
+      "name": "Bồi thường thiệt hại",
+      "domain": "DÂN SỰ",
+      "question_count": 16
+    },
+    {
+      "id": 4,
+      "name": "Thừa kế",
+      "domain": "DÂN SỰ",
+      "question_count": 18
+    },
+    {
+      "id": 5,
+      "name": "Hôn nhân và gia đình",
+      "domain": "DÂN SỰ",
+      "question_count": 18
+    },
+    {
+      "id": 6,
+      "name": "Đất đai",
+      "domain": "DÂN SỰ",
+      "question_count": 16
+    },
+    {
+      "id": 7,
+      "name": "Nhà ở",
+      "domain": "DÂN SỰ",
+      "question_count": 16
+    },
+    {
+      "id": 8,
+      "name": "Quy chế học sinh, sinh viên",
+      "domain": "GIÁO DỤC",
+      "question_count": 16
+    },
+    {
+      "id": 9,
+      "name": "Tuyển sinh",
+      "domain": "GIÁO DỤC",
+      "question_count": 15
+    },
+    {
+      "id": 10,
+      "name": "Học phí và chính sách hỗ trợ",
+      "domain": "GIÁO DỤC",
+      "question_count": 14
+    },
+    {
+      "id": 11,
+      "name": "Quy tắc giao thông",
+      "domain": "GIAO THÔNG",
+      "question_count": 15
+    },
+    {
+      "id": 12,
+      "name": "Giấy phép lái xe",
+      "domain": "GIAO THÔNG",
+      "question_count": 15
+    },
+    {
+      "id": 13,
+      "name": "Xử phạt vi phạm giao thông",
+      "domain": "GIAO THÔNG",
+      "question_count": 16
+    },
+    {
+      "id": 14,
+      "name": "Hợp đồng lao động",
+      "domain": "LAO ĐỘNG",
+      "question_count": 15
+    },
+    {
+      "id": 15,
+      "name": "Tiền lương và bảo hiểm",
+      "domain": "LAO ĐỘNG",
+      "question_count": 16
+    },
+    {
+      "id": 16,
+      "name": "Thời giờ làm việc, nghỉ ngơi",
+      "domain": "LAO ĐỘNG",
+      "question_count": 15
+    },
+    {
+      "id": 17,
+      "name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "domain": "LAO ĐỘNG",
+      "question_count": 16
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-0001",
+      "question_code": "1.1.1",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Hợp đồng miệng có giá trị pháp lý không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0002",
+      "question_code": "1.1.2",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Hợp đồng đã ký nhưng tôi muốn hủy thì có được không và có bị phạt không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0003",
+      "question_code": "1.1.3",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Hard",
+      "question": "Hợp đồng bị ép ký hoặc ký do bị lừa dối có bị vô hiệu không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0004",
+      "question_code": "1.1.4",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Citation-focused",
+      "question": "Điều khoản phạt vi phạm trong hợp đồng có giới hạn mức tối đa không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0005",
+      "question_code": "1.1.5",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Citation-focused",
+      "question": "Đặt cọc rồi bên kia đổi ý thì ai phải chịu phạt và mức phạt thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0006",
+      "question_code": "1.1.6",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Multi-document",
+      "question": "Hợp đồng ủy quyền và giấy ủy quyền khác nhau thế nào, khi nào phải công chứng?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0007",
+      "question_code": "1.1.7",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Hard",
+      "question": "Hợp đồng góp vốn, hùn tiền làm ăn với bạn bè nên lập thế nào để tránh tranh chấp?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0008",
+      "question_code": "1.1.8",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Mua bán xe cũ bằng giấy tay mà chưa sang tên thì rủi ro gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0009",
+      "question_code": "1.1.9",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Medium",
+      "question": "Mua hàng online nhận hàng sai hoặc lỗi, người bán không đổi trả thì xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0010",
+      "question_code": "1.1.10",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Hợp đồng theo mẫu của nhà cung cấp (phòng gym, spa, thẻ thành viên) có điều khoản bất lợi, tôi có quyền hủy không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0011",
+      "question_code": "1.1.11",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Thuê nhà thầu xây nhà trọn gói, hợp đồng nên có những điều khoản nào để khỏi bị thiệt?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0012",
+      "question_code": "1.1.12",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Nhà thầu chậm tiến độ nhiều tháng thì tôi có quyền phạt hoặc chấm dứt hợp đồng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0013",
+      "question_code": "1.1.13",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Thuê freelancer thiết kế logo, viết phần mềm mà không ký hợp đồng thì bản quyền của ai?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0014",
+      "question_code": "1.1.14",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Multi-document",
+      "question": "Ký hợp đồng với đối tác nước ngoài thì chọn luật nước nào và tòa án nào giải quyết?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0015",
+      "question_code": "1.1.15",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Easy",
+      "question": "Khi nào hợp đồng bắt buộc phải công chứng, chứng thực?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0016",
+      "question_code": "1.1.16",
+      "domain": "DÂN SỰ",
+      "category_id": 1,
+      "category_name": "Hợp đồng",
+      "difficulty": "Hard",
+      "question": "Hợp đồng bị tuyên vô hiệu thì hậu quả pháp lý ra sao, tiền đã trả có đòi lại được không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0017",
+      "question_code": "1.2.1",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Cho bạn vay tiền không có giấy tờ thì đòi lại thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0018",
+      "question_code": "1.2.2",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Giấy vay tiền viết tay cần những nội dung gì để có giá trị pháp lý?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0019",
+      "question_code": "1.2.3",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Citation-focused",
+      "question": "Lãi suất cho vay tối đa theo pháp luật là bao nhiêu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0020",
+      "question_code": "1.2.4",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Hard",
+      "question": "Người vay không trả nợ, tôi khởi kiện ở tòa nào và cần chuẩn bị gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0021",
+      "question_code": "1.2.5",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Citation-focused",
+      "question": "Nợ quá hạn bao lâu thì hết thời hiệu khởi kiện?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0022",
+      "question_code": "1.2.6",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Medium",
+      "question": "Bị đòi nợ bằng cách nhắn tin đe dọa, tạt sơn thì tôi có thể làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0023",
+      "question_code": "1.2.7",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Làm người bảo lãnh cho bạn vay tiền, nếu họ bỏ trốn thì tôi có phải trả không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0024",
+      "question_code": "1.2.8",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Vay qua app, vay online với lãi suất rất cao, tôi có phải trả hết không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0025",
+      "question_code": "1.2.9",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Hard",
+      "question": "Thế nào là tín dụng đen và cho vay nặng lãi bị xử lý ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0026",
+      "question_code": "1.2.10",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Medium",
+      "question": "Chơi hụi, họ mà chủ hụi bỏ trốn thì xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0027",
+      "question_code": "1.2.11",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Nợ thẻ tín dụng không trả nổi, ngân hàng gọi điện liên tục cho người thân thì có đúng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0028",
+      "question_code": "1.2.12",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Citation-focused",
+      "question": "Nợ xấu trên CIC ảnh hưởng gì khi vay mua nhà, mua xe và bao lâu thì được xóa?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0029",
+      "question_code": "1.2.13",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Thế chấp sổ đỏ vay ngân hàng, nếu không trả được nợ thì ngân hàng xử lý tài sản thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0030",
+      "question_code": "1.2.14",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Vợ chồng có khoản nợ chung hoặc nợ riêng thì ai chịu trách nhiệm trả?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0031",
+      "question_code": "1.2.15",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Người vay qua đời thì ai phải trả nợ?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0032",
+      "question_code": "1.2.16",
+      "domain": "DÂN SỰ",
+      "category_id": 2,
+      "category_name": "Vay nợ",
+      "difficulty": "Easy",
+      "question": "Bản án đã có hiệu lực mà bên thua không trả nợ, tôi làm đơn yêu cầu thi hành án ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0033",
+      "question_code": "1.3.1",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Multi-document",
+      "question": "Gây tai nạn mà nạn nhân bị thương thì trách nhiệm dân sự và hình sự ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0034",
+      "question_code": "1.3.2",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Tai nạn giao thông không có lỗi rõ ràng thì ai chịu bồi thường?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0035",
+      "question_code": "1.3.3",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Easy",
+      "question": "Cho người khác mượn xe gây tai nạn thì chủ xe có chịu trách nhiệm không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0036",
+      "question_code": "1.3.4",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Easy",
+      "question": "Bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe chi trả những gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0037",
+      "question_code": "1.3.5",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Easy",
+      "question": "Bị chó của hàng xóm cắn thì chủ vật nuôi chịu trách nhiệm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0038",
+      "question_code": "1.3.6",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Cho thuê hoặc cho mượn tài sản bị hư hỏng, mất mát thì bồi thường ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0039",
+      "question_code": "1.3.7",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Bị người khác đăng bài bôi nhọ danh dự trên mạng, tôi yêu cầu gỡ bài và bồi thường được không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0040",
+      "question_code": "1.3.8",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Easy",
+      "question": "Ai đó đăng ảnh hoặc video của tôi mà không xin phép thì có vi phạm không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0041",
+      "question_code": "1.3.9",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Xây nhà làm nứt tường nhà bên cạnh thì đòi bồi thường thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0042",
+      "question_code": "1.3.10",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Con chưa đủ 18 tuổi gây thiệt hại cho người khác thì cha mẹ có phải bồi thường không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0043",
+      "question_code": "1.3.11",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Bác sĩ sai sót, sự cố y khoa gây hậu quả thì bồi thường thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0044",
+      "question_code": "1.3.12",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Bị shipper, đơn vị vận chuyển làm mất, làm hỏng hàng thì đòi bồi thường ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0045",
+      "question_code": "1.3.13",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Ăn uống bị ngộ độc thực phẩm thì ai chịu trách nhiệm bồi thường?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0046",
+      "question_code": "1.3.14",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Hard",
+      "question": "Hố ga, cây xanh, công trình công cộng gây tai nạn thì cơ quan quản lý có phải bồi thường không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0047",
+      "question_code": "1.3.15",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Citation-focused",
+      "question": "Tổn thất tinh thần được bồi thường tối đa bao nhiêu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0048",
+      "question_code": "1.3.16",
+      "domain": "DÂN SỰ",
+      "category_id": 3,
+      "category_name": "Bồi thường thiệt hại",
+      "difficulty": "Citation-focused",
+      "question": "Thời hiệu yêu cầu bồi thường thiệt hại là bao lâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0049",
+      "question_code": "1.4.1",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Không có di chúc thì tài sản được chia cho ai?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0050",
+      "question_code": "1.4.2",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Hàng thừa kế thứ nhất, thứ hai, thứ ba gồm những ai?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0051",
+      "question_code": "1.4.3",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Di chúc viết tay không có người làm chứng có hợp pháp không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0052",
+      "question_code": "1.4.4",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Có cần công chứng di chúc không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0053",
+      "question_code": "1.4.5",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Bố mẹ để lại toàn bộ tài sản cho một người con, những người con khác có đòi được phần không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0054",
+      "question_code": "1.4.6",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Con riêng, con ngoài giá thú có quyền thừa kế không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0055",
+      "question_code": "1.4.7",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Vợ hoặc chồng còn sống có được hưởng phần nào khi người kia mất không có di chúc?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0056",
+      "question_code": "1.4.8",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Medium",
+      "question": "Người thừa kế từ chối nhận di sản thì thủ tục thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0057",
+      "question_code": "1.4.9",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Hard",
+      "question": "Người thừa kế mất trước người để lại di sản thì con của họ có được hưởng không (thừa kế thế vị)?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0058",
+      "question_code": "1.4.10",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Multi-document",
+      "question": "Di sản có cả khoản nợ thì người thừa kế có phải trả nợ không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0059",
+      "question_code": "1.4.11",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Citation-focused",
+      "question": "Thời hạn yêu cầu chia di sản là bao lâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0060",
+      "question_code": "1.4.12",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Medium",
+      "question": "Làm sao để khai nhận di sản khi người mất chỉ để lại sổ đỏ?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0061",
+      "question_code": "1.4.13",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Medium",
+      "question": "Có người trong gia đình giấu di chúc hoặc làm giả di chúc thì xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0062",
+      "question_code": "1.4.14",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Di chúc có thể sửa hoặc hủy bất cứ lúc nào không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0063",
+      "question_code": "1.4.15",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Người thừa kế bị coi là mất quyền hưởng di sản trong trường hợp nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0064",
+      "question_code": "1.4.16",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Con nuôi có quyền thừa kế như con ruột không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0065",
+      "question_code": "1.4.17",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Easy",
+      "question": "Thuế khi nhận thừa kế bất động sản như thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0066",
+      "question_code": "1.4.18",
+      "domain": "DÂN SỰ",
+      "category_id": 4,
+      "category_name": "Thừa kế",
+      "difficulty": "Multi-document",
+      "question": "Người sống ở nước ngoài có được thừa kế tài sản ở Việt Nam không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0067",
+      "question_code": "1.5.1",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Multi-document",
+      "question": "Thủ tục ly hôn thuận tình khác gì ly hôn đơn phương?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0068",
+      "question_code": "1.5.2",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Medium",
+      "question": "Chồng/vợ không chịu ký đơn ly hôn thì tôi làm sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0069",
+      "question_code": "1.5.3",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Tài sản có trước hôn nhân và tài sản có sau hôn nhân được chia thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0070",
+      "question_code": "1.5.4",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Nhà do bố mẹ cho riêng một người trong thời kỳ hôn nhân có phải tài sản chung không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0071",
+      "question_code": "1.5.5",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Con dưới 36 tháng tuổi thì ai được quyền nuôi?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0072",
+      "question_code": "1.5.6",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Con trên 7 tuổi có được tự chọn sống với bố hay mẹ không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0073",
+      "question_code": "1.5.7",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Mức cấp dưỡng nuôi con được tính thế nào và nếu người kia không đóng thì sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0074",
+      "question_code": "1.5.8",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Người không trực tiếp nuôi con có quyền thăm nom con không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0075",
+      "question_code": "1.5.9",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Chồng/vợ ngoại tình thì có ảnh hưởng đến việc chia tài sản hay quyền nuôi con không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0076",
+      "question_code": "1.5.10",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Có thể ly hôn khi vợ đang mang thai hoặc nuôi con dưới 12 tháng tuổi không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0077",
+      "question_code": "1.5.11",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Thỏa thuận tài sản trước hôn nhân có hợp pháp không và lập thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0078",
+      "question_code": "1.5.12",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Citation-focused",
+      "question": "Tuổi tối thiểu để đăng ký kết hôn và các trường hợp bị cấm kết hôn là gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0079",
+      "question_code": "1.5.13",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Sống chung như vợ chồng nhưng không đăng ký kết hôn thì có được pháp luật công nhận không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0080",
+      "question_code": "1.5.14",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Multi-document",
+      "question": "Thủ tục kết hôn, ly hôn với người nước ngoài gồm những bước nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0081",
+      "question_code": "1.5.15",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Hard",
+      "question": "Bị bạo lực gia đình thì tôi có thể xin biện pháp bảo vệ nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0082",
+      "question_code": "1.5.16",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Medium",
+      "question": "Nhận con nuôi cần điều kiện và trình tự gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0083",
+      "question_code": "1.5.17",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Easy",
+      "question": "Xác định cha cho con khi cha không thừa nhận thì làm thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0084",
+      "question_code": "1.5.18",
+      "domain": "DÂN SỰ",
+      "category_id": 5,
+      "category_name": "Hôn nhân và gia đình",
+      "difficulty": "Medium",
+      "question": "Muốn đổi họ hoặc đổi tên cho con sau khi ly hôn thì cần thủ tục gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0085",
+      "question_code": "1.6.1",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Mua đất chỉ có giấy viết tay thì có làm được sổ đỏ không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0086",
+      "question_code": "1.6.2",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Hàng xóm xây lấn sang ranh đất của tôi thì giải quyết thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0087",
+      "question_code": "1.6.3",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Hard",
+      "question": "Đất đang tranh chấp có được chuyển nhượng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0088",
+      "question_code": "1.6.4",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Citation-focused",
+      "question": "Thủ tục tách thửa cần những giấy tờ gì và điều kiện diện tích tối thiểu ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0089",
+      "question_code": "1.6.5",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Đất đứng tên một người nhưng là tài sản chung vợ chồng, bán thì cần chữ ký ai?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0090",
+      "question_code": "1.6.6",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Đất nông nghiệp có chuyển sang đất ở được không và chi phí thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0091",
+      "question_code": "1.6.7",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Đất bị quy hoạch treo nhiều năm thì tôi có quyền gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0092",
+      "question_code": "1.6.8",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Hard",
+      "question": "Khi bị thu hồi đất, tiền bồi thường được tính theo giá nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0093",
+      "question_code": "1.6.9",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Thuế và lệ phí khi chuyển nhượng đất gồm những khoản nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0094",
+      "question_code": "1.6.10",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Medium",
+      "question": "Tặng cho đất cho con thì làm thủ tục ra sao và có phải nộp thuế không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0095",
+      "question_code": "1.6.11",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Sổ đỏ bị mất thì xin cấp lại như thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0096",
+      "question_code": "1.6.12",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Đất có đường đi chung, hàng xóm chặn lối đi thì tôi có quyền yêu cầu mở lối không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0097",
+      "question_code": "1.6.13",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Đất hương hỏa, đất nhà thờ họ thuộc về ai và có được chia, bán không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0098",
+      "question_code": "1.6.14",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Multi-document",
+      "question": "Người nước ngoài, người Việt định cư ở nước ngoài có được đứng tên đất ở Việt Nam không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0099",
+      "question_code": "1.6.15",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Easy",
+      "question": "Đặt cọc mua đất rồi bên bán đổi ý, tôi có được đòi lại gấp đôi không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0100",
+      "question_code": "1.6.16",
+      "domain": "DÂN SỰ",
+      "category_id": 6,
+      "category_name": "Đất đai",
+      "difficulty": "Hard",
+      "question": "Tranh chấp ranh giới giữa các hộ nông dân, lối đi, nguồn nước thì giải quyết ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0101",
+      "question_code": "1.7.1",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Medium",
+      "question": "Đặt cọc mua nhà rồi bên bán đổi ý thì xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0102",
+      "question_code": "1.7.2",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Hard",
+      "question": "Mua căn hộ chung cư mà chủ đầu tư chậm bàn giao, tôi đòi bồi thường được không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0103",
+      "question_code": "1.7.3",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Medium",
+      "question": "Chung cư đã ở nhiều năm vẫn chưa được cấp sổ hồng thì phải làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0104",
+      "question_code": "1.7.4",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Thuê nhà bị chủ nhà tăng giá giữa chừng hoặc đuổi ra khi chưa hết hợp đồng, có đúng luật không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0105",
+      "question_code": "1.7.5",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Medium",
+      "question": "Chủ nhà không trả lại tiền cọc khi tôi trả nhà, tôi xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0106",
+      "question_code": "1.7.6",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Nhà đứng tên một người nhưng là tài sản chung, bán thì cần chữ ký ai?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0107",
+      "question_code": "1.7.7",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Medium",
+      "question": "Ban quản lý chung cư tự ý tăng phí, chiếm dụng quỹ bảo trì thì cư dân làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0108",
+      "question_code": "1.7.8",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Chủ căn hộ cải tạo, đục tường, đổi mục đích sử dụng có được không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0109",
+      "question_code": "1.7.9",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Chung cư cấm nuôi thú cưng, kinh doanh homestay, cho thuê ngắn ngày có hợp pháp không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0110",
+      "question_code": "1.7.10",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Citation-focused",
+      "question": "Xây nhà cần xin phép những gì, nhà dưới bao nhiêu mét vuông thì được miễn phép?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0111",
+      "question_code": "1.7.11",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Xây nhà không phép hoặc sai phép thì bị xử phạt và có bị tháo dỡ không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0112",
+      "question_code": "1.7.12",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Nhà bị cháy, ngập, sập do công trình bên cạnh thì ai chịu trách nhiệm?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0113",
+      "question_code": "1.7.13",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Chủ nhà trọ không đảm bảo an toàn phòng cháy chữa cháy thì có bị xử lý không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0114",
+      "question_code": "1.7.14",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Citation-focused",
+      "question": "Người nước ngoài có được mua, thuê nhà ở Việt Nam không và thời hạn bao lâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0115",
+      "question_code": "1.7.15",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Hàng xóm gây ồn, xả khói, nuôi thú gây phiền thì phản ánh ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0116",
+      "question_code": "1.7.16",
+      "domain": "DÂN SỰ",
+      "category_id": 7,
+      "category_name": "Nhà ở",
+      "difficulty": "Easy",
+      "question": "Ở nhờ, mượn nhà người khác lâu năm có thể trở thành quyền sở hữu không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0117",
+      "question_code": "2.1.1",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Hard",
+      "question": "Con bị bạn bè bắt nạt, bạo lực học đường, đánh hội đồng thì gia đình xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0118",
+      "question_code": "2.1.2",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Hard",
+      "question": "Nhà trường không xử lý hoặc che giấu vụ bạo lực học đường thì khiếu nại ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0119",
+      "question_code": "2.1.3",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Medium",
+      "question": "Con bị giáo viên đánh, xúc phạm, phạt quá mức thì có thể làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0120",
+      "question_code": "2.1.4",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Hard",
+      "question": "Con 15, 16 tuổi đánh bạn gây thương tích thì chịu trách nhiệm gì, cha mẹ có phải bồi thường không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0121",
+      "question_code": "2.1.5",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Citation-focused",
+      "question": "Từ bao nhiêu tuổi thì phải chịu trách nhiệm hình sự, hành chính?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0122",
+      "question_code": "2.1.6",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Easy",
+      "question": "Quyền của học sinh khi bị kỷ luật, đình chỉ học, ghi vào học bạ là gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0123",
+      "question_code": "2.1.7",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Easy",
+      "question": "Giáo viên ép học sinh học thêm tại nhà có vi phạm không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0124",
+      "question_code": "2.1.8",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Hard",
+      "question": "Nghi ngờ con bị xâm hại, quấy rối tình dục ở trường thì tố cáo ở đâu và cần giữ chứng cứ gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0125",
+      "question_code": "2.1.9",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Easy",
+      "question": "Con nghiện game, nạp tiền bằng thẻ của tôi thì có đòi lại được không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0126",
+      "question_code": "2.1.10",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Hard",
+      "question": "Sinh viên bị buộc thôi học, bị cảnh cáo học vụ thì có quyền khiếu nại không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0127",
+      "question_code": "2.1.11",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Medium",
+      "question": "Điều kiện bảo lưu kết quả học tập, chuyển trường, chuyển ngành là gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0128",
+      "question_code": "2.1.12",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Easy",
+      "question": "Sinh viên thi cử bị nghi gian lận, bị đình chỉ thi thì quy trình xử lý ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0129",
+      "question_code": "2.1.13",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Hard",
+      "question": "Phúc khảo điểm thi, khiếu nại điểm số sai thì làm thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0130",
+      "question_code": "2.1.14",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Medium",
+      "question": "Điều kiện xét tốt nghiệp và nhận bằng, bị giữ bằng vì nợ học phí có đúng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0131",
+      "question_code": "2.1.15",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Easy",
+      "question": "Sinh viên đi làm thêm, thực tập có hợp đồng và quyền lợi gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0132",
+      "question_code": "2.1.16",
+      "domain": "GIÁO DỤC",
+      "category_id": 8,
+      "category_name": "Quy chế học sinh, sinh viên",
+      "difficulty": "Easy",
+      "question": "Đăng ảnh, video học sinh lên mạng và việc lợi dụng hình ảnh trẻ em có vi phạm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0133",
+      "question_code": "2.2.1",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Hard",
+      "question": "Tuyển sinh đầu cấp bị từ chối vì trái tuyến thì khiếu nại thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0134",
+      "question_code": "2.2.2",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Quy định tuyển sinh vào lớp 1, lớp 6, lớp 10 theo địa bàn cư trú hiện nay ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0135",
+      "question_code": "2.2.3",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Trường công lập có được thu thêm các khoản ngoài học phí khi nhập học không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0136",
+      "question_code": "2.2.4",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Điểm ưu tiên theo khu vực, đối tượng khi xét tuyển đại học được tính thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0137",
+      "question_code": "2.2.5",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Đã trúng tuyển nhưng muốn đổi nguyện vọng hoặc không nhập học thì có bị ảnh hưởng gì không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0138",
+      "question_code": "2.2.6",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Medium",
+      "question": "Xét tuyển học bạ, xét tuyển thẳng có điều kiện gì và ai được hưởng?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0139",
+      "question_code": "2.2.7",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Hard",
+      "question": "Khiếu nại kết quả xét tuyển, điểm chuẩn thì nộp đơn ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0140",
+      "question_code": "2.2.8",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Trường tuyển sinh gian lận, tuyển vượt chỉ tiêu, quảng cáo sai thì phản ánh thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0141",
+      "question_code": "2.2.9",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Học sinh có hộ khẩu, cư trú ở nơi khác muốn học tại địa phương thì cần giấy tờ gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0142",
+      "question_code": "2.2.10",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Học sinh khuyết tật, con thương binh, hộ nghèo có chính sách ưu tiên tuyển sinh không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0143",
+      "question_code": "2.2.11",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Multi-document",
+      "question": "Tuyển sinh liên thông, văn bằng 2, hệ vừa học vừa làm có điều kiện gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0144",
+      "question_code": "2.2.12",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Sau khi trúng tuyển, nhà trường yêu cầu đóng tiền nhập học trước thì có hợp lý không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0145",
+      "question_code": "2.2.13",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Easy",
+      "question": "Du học tự túc, ký hợp đồng với công ty tư vấn du học rồi bị lừa, đòi lại tiền ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0146",
+      "question_code": "2.2.14",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Medium",
+      "question": "Điều kiện cho con đi du học, xuất cảnh khi cha mẹ ly hôn hoặc bất đồng là gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0147",
+      "question_code": "2.2.15",
+      "domain": "GIÁO DỤC",
+      "category_id": 9,
+      "category_name": "Tuyển sinh",
+      "difficulty": "Multi-document",
+      "question": "Học sinh nước ngoài, con của người nước ngoài học tại trường Việt Nam cần điều kiện gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0148",
+      "question_code": "2.3.1",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Học phí trường công, trường tư được quy định và tăng như thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0149",
+      "question_code": "2.3.2",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Trường học thu các khoản \"tự nguyện\" như quỹ lớp, quỹ phụ huynh, học thêm thế nào là sai quy định?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0150",
+      "question_code": "2.3.3",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Medium",
+      "question": "Đối tượng nào được miễn, giảm học phí và hồ sơ nộp ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0151",
+      "question_code": "2.3.4",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Học bổng, hỗ trợ chi phí học tập dành cho đối tượng nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0152",
+      "question_code": "2.3.5",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Hộ nghèo, cận nghèo, con thương binh, liệt sĩ được hỗ trợ gì khi đi học?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0153",
+      "question_code": "2.3.6",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Học sinh dân tộc thiểu số, vùng sâu vùng xa được hưởng chính sách ưu tiên gì về giáo dục?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0154",
+      "question_code": "2.3.7",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Medium",
+      "question": "Vay vốn tín dụng học tập cho sinh viên cần điều kiện và thủ tục gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0155",
+      "question_code": "2.3.8",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Trung tâm tiếng Anh, trường tư thu học phí rồi đóng cửa hoặc không đúng cam kết thì đòi lại tiền ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0156",
+      "question_code": "2.3.9",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Nghỉ học giữa chừng, chuyển trường thì có được hoàn học phí đã đóng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0157",
+      "question_code": "2.3.10",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Học phí đóng nhầm, đóng thừa thì xin hoàn lại thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0158",
+      "question_code": "2.3.11",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Chi phí học bán trú, ăn trưa, đồng phục, sách giáo khoa thu thế nào là đúng quy định?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0159",
+      "question_code": "2.3.12",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Gia đình khó khăn đột xuất, không đóng nổi học phí thì có được hoãn đóng, hỗ trợ không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0160",
+      "question_code": "2.3.13",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Học phí, chi phí học tập có được trừ vào thu nhập chịu thuế không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0161",
+      "question_code": "2.3.14",
+      "domain": "GIÁO DỤC",
+      "category_id": 10,
+      "category_name": "Học phí và chính sách hỗ trợ",
+      "difficulty": "Easy",
+      "question": "Trường thu học phí cao hơn khung quy định, tôi phản ánh ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0162",
+      "question_code": "3.1.1",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Medium",
+      "question": "Đi ngược chiều, đi vào đường cấm thì bị xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0163",
+      "question_code": "3.1.2",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Khi gặp đèn vàng, đèn đỏ, rẽ phải khi đèn đỏ thì quy định ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0164",
+      "question_code": "3.1.3",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Medium",
+      "question": "Không đội mũ bảo hiểm hoặc đội không đúng chuẩn thì bị xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0165",
+      "question_code": "3.1.4",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Chở trẻ em, chở quá số người quy định trên xe máy, ô tô thì có sao không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0166",
+      "question_code": "3.1.5",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Lái xe điện, xe đạp điện, xe máy điện có cần bằng lái, đăng ký, đội mũ bảo hiểm không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0167",
+      "question_code": "3.1.6",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Học sinh dưới 18 tuổi đi xe máy phân khối lớn hoặc xe điện thì bị phạt thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0168",
+      "question_code": "3.1.7",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Quy tắc nhường đường tại ngã tư, vòng xuyến, đường ưu tiên là gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0169",
+      "question_code": "3.1.8",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Dừng, đỗ xe ở đâu thì bị cấm và bị xử lý ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0170",
+      "question_code": "3.1.9",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Cảnh sát giao thông có quyền khám xe, kiểm tra điện thoại, giấy tờ không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0171",
+      "question_code": "3.1.10",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Có được từ chối thổi nồng độ cồn hoặc kiểm tra ma túy không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0172",
+      "question_code": "3.1.11",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Medium",
+      "question": "Tai nạn giao thông xảy ra thì phải làm gì đầu tiên, có được rời hiện trường không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0173",
+      "question_code": "3.1.12",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Medium",
+      "question": "Gây tai nạn rồi bỏ chạy thì bị xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0174",
+      "question_code": "3.1.13",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Điều khiển xe khi sử dụng điện thoại, tai nghe có bị phạt không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0175",
+      "question_code": "3.1.14",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Đi tàu hỏa, qua đường ngang, đường sắt cần chú ý quy tắc gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0176",
+      "question_code": "3.1.15",
+      "domain": "GIAO THÔNG",
+      "category_id": 11,
+      "category_name": "Quy tắc giao thông",
+      "difficulty": "Easy",
+      "question": "Điều khiển thuyền, ca nô, flycam cần giấy phép và tuân thủ quy tắc gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0177",
+      "question_code": "3.2.1",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Easy",
+      "question": "Hạng giấy phép lái xe nào được lái loại xe nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0178",
+      "question_code": "3.2.2",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Medium",
+      "question": "Điều kiện độ tuổi, sức khỏe để thi lấy giấy phép lái xe là gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0179",
+      "question_code": "3.2.3",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Medium",
+      "question": "Thủ tục, hồ sơ và thời gian học, thi lấy giấy phép lái xe ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0180",
+      "question_code": "3.2.4",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Easy",
+      "question": "Quên mang giấy phép lái xe hoặc đăng ký xe thì bị phạt không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0181",
+      "question_code": "3.2.5",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Easy",
+      "question": "Mất giấy phép lái xe thì xin cấp lại như thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0182",
+      "question_code": "3.2.6",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Citation-focused",
+      "question": "Giấy phép lái xe hết hạn thì gia hạn, đổi thế nào và quá hạn bao lâu thì phải thi lại?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0183",
+      "question_code": "3.2.7",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Multi-document",
+      "question": "Đổi giấy phép lái xe nước ngoài sang giấy phép Việt Nam cần thủ tục gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0184",
+      "question_code": "3.2.8",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Multi-document",
+      "question": "Người nước ngoài ở Việt Nam muốn lái xe cần giấy phép gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0185",
+      "question_code": "3.2.9",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Easy",
+      "question": "Bằng lái quốc tế có giá trị ở Việt Nam không và xin ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0186",
+      "question_code": "3.2.10",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Medium",
+      "question": "Nâng hạng giấy phép lái xe cần điều kiện gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0187",
+      "question_code": "3.2.11",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Citation-focused",
+      "question": "Giấy khám sức khỏe lái xe có giá trị bao lâu và khám ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0188",
+      "question_code": "3.2.12",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Citation-focused",
+      "question": "Bị tước giấy phép lái xe có thời hạn thì có được lái xe trong thời gian đó không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0189",
+      "question_code": "3.2.13",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Medium",
+      "question": "Mua bằng lái, thi hộ, bằng lái giả bị xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0190",
+      "question_code": "3.2.14",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Easy",
+      "question": "Giấy phép lái xe có bị trừ điểm không và điểm được phục hồi khi nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0191",
+      "question_code": "3.2.15",
+      "domain": "GIAO THÔNG",
+      "category_id": 12,
+      "category_name": "Giấy phép lái xe",
+      "difficulty": "Hard",
+      "question": "Học lái xe ở trung tâm bị thu thêm phí, cam kết không đúng thì khiếu nại ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0192",
+      "question_code": "3.3.1",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Citation-focused",
+      "question": "Uống rượu bia rồi lái xe máy, ô tô bị phạt bao nhiêu và bị tước bằng bao lâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0193",
+      "question_code": "3.3.2",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Vượt đèn đỏ bị phạt mức nào với xe máy và ô tô?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0194",
+      "question_code": "3.3.3",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Bị giữ xe, giấy tờ thì lấy lại như thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0195",
+      "question_code": "3.3.4",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Chạy quá tốc độ bị camera ghi lại thì nhận thông báo phạt nguội thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0196",
+      "question_code": "3.3.5",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Xe không chính chủ có bị phạt không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0197",
+      "question_code": "3.3.6",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Medium",
+      "question": "Xe quá hạn đăng kiểm bị xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0198",
+      "question_code": "3.3.7",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Xe tải chở quá tải, quá khổ bị xử phạt thế nào, chủ hàng hay tài xế chịu trách nhiệm?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0199",
+      "question_code": "3.3.8",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Gây tai nạn mà nạn nhân bị thương thì trách nhiệm hình sự ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0200",
+      "question_code": "3.3.9",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Medium",
+      "question": "Đua xe trái phép, nẹt pô, bốc đầu, tụ tập gây rối bị xử lý thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0201",
+      "question_code": "3.3.10",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Citation-focused",
+      "question": "Bị phạt oan thì khiếu nại ở đâu và trong thời hạn nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0202",
+      "question_code": "3.3.11",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Medium",
+      "question": "Không nộp phạt đúng hạn thì bị xử lý thế nào, có nộp phạt online được không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0203",
+      "question_code": "3.3.12",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Bị phạt nhiều lỗi cùng lúc thì tính thế nào, có phạt chồng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0204",
+      "question_code": "3.3.13",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Cho người khác mượn xe vi phạm thì ai bị phạt?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0205",
+      "question_code": "3.3.14",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Biển số bị che, bị mờ, gắn biển giả có bị phạt không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0206",
+      "question_code": "3.3.15",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Xe taxi công nghệ, xe ghép vi phạm thì tài xế và hãng ai chịu trách nhiệm?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0207",
+      "question_code": "3.3.16",
+      "domain": "GIAO THÔNG",
+      "category_id": 13,
+      "category_name": "Xử phạt vi phạm giao thông",
+      "difficulty": "Easy",
+      "question": "Bị phạt nguội ở tỉnh khác thì nộp phạt và lấy lại giấy tờ thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0208",
+      "question_code": "4.1.1",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Có những loại hợp đồng lao động nào và hợp đồng bằng lời nói có hợp pháp không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0209",
+      "question_code": "4.1.2",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Hợp đồng lao động bắt buộc phải có những nội dung gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0210",
+      "question_code": "4.1.3",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Citation-focused",
+      "question": "Thử việc tối đa bao lâu và lương thử việc tối thiểu là bao nhiêu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0211",
+      "question_code": "4.1.4",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Hợp đồng thử việc có phải đóng bảo hiểm xã hội không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0212",
+      "question_code": "4.1.5",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Citation-focused",
+      "question": "Hết hợp đồng thời hạn 12 tháng mà vẫn đi làm tiếp thì hợp đồng được tính thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0213",
+      "question_code": "4.1.6",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Multi-document",
+      "question": "Ký nhiều hợp đồng thời vụ liên tiếp có bị coi là lách luật không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0214",
+      "question_code": "4.1.7",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Tôi bị chuyển sang vị trí khác với mức lương thấp hơn mà không được thỏa thuận, có được từ chối không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0215",
+      "question_code": "4.1.8",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Công ty giữ bản gốc bằng cấp của tôi có hợp pháp không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0216",
+      "question_code": "4.1.9",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Multi-document",
+      "question": "Có được ký đồng thời hai hợp đồng lao động với hai công ty không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0217",
+      "question_code": "4.1.10",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Medium",
+      "question": "Phụ lục hợp đồng, thay đổi nội dung hợp đồng thì cần thủ tục gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0218",
+      "question_code": "4.1.11",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Hard",
+      "question": "Công ty yêu cầu ký cam kết bồi thường chi phí đào tạo, có hợp lý không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0219",
+      "question_code": "4.1.12",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Multi-document",
+      "question": "Người nước ngoài làm việc tại Việt Nam cần giấy phép lao động nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0220",
+      "question_code": "4.1.13",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Lao động giúp việc gia đình có hợp đồng, quyền nghỉ ngơi và bảo hiểm ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0221",
+      "question_code": "4.1.14",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Easy",
+      "question": "Cộng tác viên, freelancer, tài xế công nghệ là lao động hay đối tác, có quyền lợi gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0222",
+      "question_code": "4.1.15",
+      "domain": "LAO ĐỘNG",
+      "category_id": 14,
+      "category_name": "Hợp đồng lao động",
+      "difficulty": "Medium",
+      "question": "Công ty bắt ký hợp đồng cộng tác viên để né đóng bảo hiểm, tôi làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0223",
+      "question_code": "4.2.1",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Hard",
+      "question": "Công ty nợ lương 3 tháng, tôi phải khiếu nại ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0224",
+      "question_code": "4.2.2",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Citation-focused",
+      "question": "Mức lương tối thiểu vùng hiện nay là bao nhiêu và công ty trả thấp hơn thì sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0225",
+      "question_code": "4.2.3",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Công ty phạt tiền khi tôi đi làm muộn, việc này có đúng luật không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0226",
+      "question_code": "4.2.4",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Tiền thưởng Tết, phụ cấp, tiền ăn trưa có phải trả và có tính thuế không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0227",
+      "question_code": "4.2.5",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Medium",
+      "question": "Công ty không đóng bảo hiểm xã hội cho tôi, tôi nên làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0228",
+      "question_code": "4.2.6",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Công ty đóng thiếu, đóng chậm hoặc đóng sai mức lương, tôi kiểm tra và phản ánh ở đâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0229",
+      "question_code": "4.2.7",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Tra cứu quá trình đóng bảo hiểm xã hội của mình bằng cách nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0230",
+      "question_code": "4.2.8",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Citation-focused",
+      "question": "Đóng bảo hiểm xã hội bao nhiêu năm thì được hưởng lương hưu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0231",
+      "question_code": "4.2.9",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Medium",
+      "question": "Tôi muốn rút bảo hiểm xã hội một lần thì điều kiện và thủ tục thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0232",
+      "question_code": "4.2.10",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Citation-focused",
+      "question": "Bị mất việc thì điều kiện hưởng trợ cấp thất nghiệp và mức hưởng là bao nhiêu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0233",
+      "question_code": "4.2.11",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Chế độ thai sản cho lao động nữ và nam gồm những gì, tính tiền thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0234",
+      "question_code": "4.2.12",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Citation-focused",
+      "question": "Nghỉ ốm, nghỉ chăm con ốm được hưởng bao nhiêu ngày và mức tiền?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0235",
+      "question_code": "4.2.13",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Tôi bị tai nạn trên đường đi làm về, có được hưởng chế độ tai nạn lao động không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0236",
+      "question_code": "4.2.14",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Hard",
+      "question": "Tai nạn lao động, bệnh nghề nghiệp được bồi thường và trợ cấp thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0237",
+      "question_code": "4.2.15",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Multi-document",
+      "question": "Làm hai công ty cùng lúc thì khai và nộp thuế thu nhập cá nhân thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0238",
+      "question_code": "4.2.16",
+      "domain": "LAO ĐỘNG",
+      "category_id": 15,
+      "category_name": "Tiền lương và bảo hiểm",
+      "difficulty": "Easy",
+      "question": "Trợ cấp thôi việc và trợ cấp mất việc được tính ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0239",
+      "question_code": "4.3.1",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Citation-focused",
+      "question": "Thời giờ làm việc bình thường một ngày, một tuần tối đa là bao nhiêu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0240",
+      "question_code": "4.3.2",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Citation-focused",
+      "question": "Làm thêm giờ và làm ngày lễ được trả lương bao nhiêu phần trăm?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0241",
+      "question_code": "4.3.3",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Citation-focused",
+      "question": "Mỗi năm được làm thêm tối đa bao nhiêu giờ, công ty ép tăng ca có đúng luật không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0242",
+      "question_code": "4.3.4",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Làm ca đêm có được trả thêm lương không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0243",
+      "question_code": "4.3.5",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Số ngày phép năm được tính thế nào và có được cộng dồn sang năm sau không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0244",
+      "question_code": "4.3.6",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Nghỉ phép không dùng hết thì công ty có phải trả tiền không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0245",
+      "question_code": "4.3.7",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Citation-focused",
+      "question": "Nghỉ việc riêng có lương (cưới, tang) được bao nhiêu ngày?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0246",
+      "question_code": "4.3.8",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Nghỉ không lương thì thỏa thuận với công ty thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0247",
+      "question_code": "4.3.9",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Nghỉ giữa ca, nghỉ hằng tuần được quy định ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0248",
+      "question_code": "4.3.10",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Lao động nữ mang thai, nuôi con dưới 12 tháng tuổi được giảm giờ làm, nghỉ giải lao thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0249",
+      "question_code": "4.3.11",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Citation-focused",
+      "question": "Nghỉ thai sản bao lâu, lao động nam được nghỉ khi vợ sinh không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0250",
+      "question_code": "4.3.12",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Làm việc từ xa, làm việc theo ca, làm việc linh hoạt thì tính giờ làm thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0251",
+      "question_code": "4.3.13",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Medium",
+      "question": "Công ty bắt trực đêm, trực cuối tuần không trả thêm tiền thì tôi làm gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0252",
+      "question_code": "4.3.14",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Nghỉ ốm dài ngày thì có bị công ty cho thôi việc không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0253",
+      "question_code": "4.3.15",
+      "domain": "LAO ĐỘNG",
+      "category_id": 16,
+      "category_name": "Thời giờ làm việc, nghỉ ngơi",
+      "difficulty": "Easy",
+      "question": "Ngày nghỉ lễ, Tết được nghỉ những ngày nào và nếu trùng cuối tuần thì sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0254",
+      "question_code": "4.4.1",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Easy",
+      "question": "Công ty cho tôi nghỉ việc đột ngột, không báo trước thì có đúng luật không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0255",
+      "question_code": "4.4.2",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Citation-focused",
+      "question": "Tôi muốn nghỉ việc thì phải báo trước bao nhiêu ngày?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0256",
+      "question_code": "4.4.3",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Easy",
+      "question": "Trường hợp nào được đơn phương chấm dứt hợp đồng mà không cần báo trước?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0257",
+      "question_code": "4.4.4",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Hard",
+      "question": "Công ty yêu cầu tôi bồi thường vì nghỉ trước hạn hợp đồng, có hợp lý không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0258",
+      "question_code": "4.4.5",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Hard",
+      "question": "Tôi bị sa thải khi đang mang thai, công ty vi phạm điều gì?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0259",
+      "question_code": "4.4.6",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Hard",
+      "question": "Công ty kỷ luật sa thải sai quy trình thì tôi có đòi lại việc không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0260",
+      "question_code": "4.4.7",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Medium",
+      "question": "Công ty cắt giảm nhân sự hàng loạt, tái cơ cấu thì phải làm gì để đúng luật?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0261",
+      "question_code": "4.4.8",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Citation-focused",
+      "question": "Khi nghỉ việc, công ty phải trả những gì (lương, sổ bảo hiểm, xác nhận, trợ cấp) và trong bao lâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0262",
+      "question_code": "4.4.9",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Medium",
+      "question": "Công ty không chốt sổ bảo hiểm, không trả giấy tờ khi nghỉ việc thì làm sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0263",
+      "question_code": "4.4.10",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Hard",
+      "question": "Tôi bị quấy rối ở nơi làm việc thì tố cáo bằng cách nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0264",
+      "question_code": "4.4.11",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Hard",
+      "question": "Tranh chấp lao động khiếu nại ở đâu: hòa giải viên, thanh tra lao động hay tòa án?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0265",
+      "question_code": "4.4.12",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Citation-focused",
+      "question": "Thời hiệu yêu cầu giải quyết tranh chấp lao động là bao lâu?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0266",
+      "question_code": "4.4.13",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Hard",
+      "question": "Hồ sơ khởi kiện tranh chấp lao động gồm những gì, án phí có phải đóng không?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0267",
+      "question_code": "4.4.14",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Easy",
+      "question": "Thành lập công đoàn cơ sở và vai trò công đoàn trong bảo vệ người lao động?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0268",
+      "question_code": "4.4.15",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Easy",
+      "question": "Người lao động tập thể đình công thế nào là hợp pháp và hậu quả ra sao?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    },
+    {
+      "id": "Q-0269",
+      "question_code": "4.4.16",
+      "domain": "LAO ĐỘNG",
+      "category_id": 17,
+      "category_name": "Chấm dứt hợp đồng và tranh chấp lao động",
+      "difficulty": "Multi-document",
+      "question": "Công ty phá sản, mất khả năng thanh toán thì lương và bảo hiểm của người lao động được ưu tiên thế nào?",
+      "source_file": "Bộ câu hỏi (1).docx"
+    }
+  ]
+}
