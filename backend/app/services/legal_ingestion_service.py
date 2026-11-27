@@ -1104,5 +1104,30 @@ class LegalIngestionService:
             return self.ingest_file(db, candidate, allow_update=True)
         return self._resync_existing_document_to_qdrant(db, doc, doc.file_path)
 
+    def resync_failed_documents(self, db: Session) -> ScanAndIngestResponse:
+        """Đồng bộ lại lên Qdrant tất cả văn bản đang ở trạng thái failed hoặc pending."""
+        rows = db.execute(
+            select(LegalDocumentORM).where(LegalDocumentORM.qdrant_sync_status != "synced")
+        ).scalars().all()
+        results: list[IngestionFileResult] = []
+        for doc in rows:
+            results.append(self._resync_existing_document_to_qdrant(db, doc, doc.file_path))
+
+        updated = sum(1 for r in results if r.status == "success")
+        errors = sum(1 for r in results if r.status == "error")
+        msg = (
+            f"Đã đồng bộ lại {len(rows)} văn bản chưa đồng bộ Qdrant: thành công {updated}, lỗi {errors}."
+            if rows
+            else "Tất cả văn bản hiện đều đã đồng bộ Qdrant thành công."
+        )
+        return ScanAndIngestResponse(
+            directory=self._normalize_rel_path(self.documents_dir),
+            total_files_found=len(rows),
+            updated_count=updated,
+            error_count=errors,
+            results=results,
+            message=msg,
+        )
+
 
 legal_ingestion_service = LegalIngestionService()

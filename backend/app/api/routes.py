@@ -572,6 +572,12 @@ def create_legal_document_json(
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
+@router.post("/api/legal-documents/resync-failed", response_model=ScanAndIngestResponse, tags=["Legal Documents"])
+def resync_failed_legal_documents(db: Session = Depends(get_db)) -> ScanAndIngestResponse:
+    """Đồng bộ lại tất cả văn bản đang bị lỗi/chờ đồng bộ Qdrant."""
+    return legal_ingestion_service.resync_failed_documents(db)
+
+
 @router.get("/api/legal-documents/{document_id}", response_model=LegalDocumentDetailResponse, tags=["Legal Documents"])
 def get_legal_document_detail(
     document_id: str,

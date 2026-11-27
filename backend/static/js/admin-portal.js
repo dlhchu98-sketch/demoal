@@ -152,6 +152,11 @@ window.LegalApp = window.LegalApp || {};
               <button onclick="window.LegalApp.adminScanSync()" class="btn-soft px-3.5 py-2 rounded-lg text-xs font-semibold">
                 Quét thư mục & Đồng bộ dữ liệu
               </button>
+              ${data.failed_documents > 0 ? `
+                <button onclick="window.LegalApp.adminResyncFailed()" class="px-3.5 py-2 rounded-lg text-xs font-semibold bg-amber-500 hover:bg-amber-600 text-white">
+                  Đồng bộ lại ${data.failed_documents} văn bản lỗi Qdrant
+                </button>
+              ` : ''}
               <button onclick="document.getElementById('adminAddDocBox').classList.toggle('hidden')"
                 class="btn-soft px-3.5 py-2 rounded-lg text-xs font-semibold">
                 + Thêm văn bản
@@ -237,7 +242,11 @@ window.LegalApp = window.LegalApp || {};
                     <td class="px-3 py-3">${esc(doc.effective_date || 'Chưa xác định')}</td>
                     <td class="px-3 py-3">${esc(doc.status || 'Chưa xác định')}</td>
                     <td class="px-3 py-3 text-right font-semibold">${doc.chunk_count}</td>
-                    <td class="px-3 py-3">${statusBadge(doc.qdrant_sync_status)}</td>
+                    <td class="px-3 py-3">
+                      ${statusBadge(doc.qdrant_sync_status)}
+                      ${doc.qdrant_sync_status === 'synced' ? `<div class="text-[10px] text-emerald-700 mt-0.5">${doc.qdrant_synced_chunks}/${doc.chunk_count} vectors</div>` : ''}
+                      ${doc.last_error ? `<div class="text-[10px] text-red-600 mt-0.5 max-w-[200px] truncate" title="${esc(doc.last_error)}">${esc(doc.last_error)}</div>` : ''}
+                    </td>
                     <td class="px-3 py-3 text-right whitespace-nowrap space-x-2">
                       <button onclick="window.LegalApp.openSourceDocModal('${esc(doc.document_id)}','')" class="text-[#2563EB] hover:underline font-semibold">Xem</button>
                       <button onclick="window.LegalApp.openEditMetadataPrompt('${esc(doc.document_id)}',${JSON.stringify(doc.title).replace(/"/g, '&quot;')},${JSON.stringify(doc.document_number || '').replace(/"/g, '&quot;')},${JSON.stringify(doc.status || '').replace(/"/g, '&quot;')})" class="text-slate-700 hover:underline font-semibold">Sửa</button>
@@ -269,6 +278,17 @@ window.LegalApp = window.LegalApp || {};
         method: 'POST',
         body: JSON.stringify({ auto_ingest: true, allow_update: Boolean(ns.state.adminAllowUpdate) }),
       });
+      toast(res.message, res.error_count > 0 ? 'warn' : 'success');
+      ns.renderCurrentPage();
+    } catch (e) {
+      toast(e.message, 'error');
+    }
+  };
+
+  ns.adminResyncFailed = async function () {
+    toast('Đang tạo embedding và đồng bộ lại các văn bản lỗi lên Qdrant...', 'info');
+    try {
+      const res = await api('/api/legal-documents/resync-failed', { method: 'POST' });
       toast(res.message, res.error_count > 0 ? 'warn' : 'success');
       ns.renderCurrentPage();
     } catch (e) {
