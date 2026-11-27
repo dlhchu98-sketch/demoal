@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import threading
 import time
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -25,22 +26,30 @@ BACKEND_DIR = Path(__file__).resolve().parents[1]
 STATIC_DIR = BACKEND_DIR / "static"
 
 
+def _background_startup_sync() -> None:
+    try:
+        with SessionLocal() as db:
+            if legal_ingestion_service._list_directory_files():
+                scan_res = legal_ingestion_service.scan_directory(
+                    db,
+                    auto_ingest=True,
+                    allow_update=False,
+                )
+                logger.info("Auto-scan startup (background): %s", scan_res.message)
+    except Exception as exc:
+        logger.warning("Không thể tự động quét data/legal_documents/ khi khởi động: %s", exc)
+
+
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     init_db()
     settings = get_settings()
     if settings.auto_scan_on_startup:
-        try:
-            with SessionLocal() as db:
-                if legal_ingestion_service._list_directory_files():
-                    scan_res = legal_ingestion_service.scan_directory(
-                        db,
-                        auto_ingest=True,
-                        allow_update=False,
-                    )
-                    logger.info("Auto-scan startup: %s", scan_res.message)
-        except Exception as exc:
-            logger.warning("Không thể tự động quét data/legal_documents/ khi khởi động: %s", exc)
+        threading.Thread(
+            target=_background_startup_sync,
+            name="legal-auto-scan-startup",
+            daemon=True,
+        ).start()
     yield
 
 

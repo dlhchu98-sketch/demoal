@@ -295,8 +295,27 @@ class IngestionLogORM(Base):
 
 def _create_db_engine():
     settings = get_settings()
-    connect_args = {"check_same_thread": False} if settings.database_url.startswith("sqlite") else {}
-    return create_engine(settings.database_url, future=True, connect_args=connect_args)
+    if settings.database_url.startswith("sqlite"):
+        from sqlalchemy import event
+
+        eng = create_engine(
+            settings.database_url,
+            future=True,
+            connect_args={"check_same_thread": False, "timeout": 30},
+        )
+
+        @event.listens_for(eng, "connect")
+        def _set_sqlite_pragma(dbapi_connection, _connection_record):
+            cursor = dbapi_connection.cursor()
+            try:
+                cursor.execute("PRAGMA journal_mode=WAL")
+                cursor.execute("PRAGMA synchronous=NORMAL")
+                cursor.execute("PRAGMA busy_timeout=30000")
+            finally:
+                cursor.close()
+
+        return eng
+    return create_engine(settings.database_url, future=True)
 
 
 engine = _create_db_engine()
