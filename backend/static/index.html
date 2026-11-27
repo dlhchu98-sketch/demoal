@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEGAL AI ASSISTANT — Trợ lý tra cứu pháp luật Việt Nam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <style>
+    body {
+      background-color: #F8FAFC;
+      color: #0F172A;
+      font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(15, 37, 68, 0.04);
+    }
+    .btn-navy {
+      background-color: #0F2544;
+      color: #FFFFFF;
+      transition: background-color 0.15s ease;
+    }
+    .btn-navy:hover { background-color: #1E3A5F; }
+    .btn-navy:disabled { opacity: 0.55; cursor: not-allowed; }
+    .btn-soft {
+      background-color: #EFF6FF;
+      color: #1D4ED8;
+      border: 1px solid #BFDBFE;
+      transition: background-color 0.15s ease;
+    }
+    .btn-soft:hover { background-color: #DBEAFE; }
+    .badge-pass { background: #ECFDF5; color: #047857; border: 1px solid #A7F3D0; }
+    .badge-fail { background: #FEF2F2; color: #B91C1C; border: 1px solid #FECACA; }
+    .badge-warn { background: #FFFBEB; color: #B45309; border: 1px solid #FDE68A; }
+    .badge-blue { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
+    .nav-active-user {
+      background-color: #EFF6FF;
+      color: #0F2544;
+      border-right: 3px solid #2563EB;
+      font-weight: 600;
+    }
+    .nav-active-admin {
+      background-color: rgba(59, 130, 246, 0.18);
+      color: #FFFFFF;
+      border-right: 3px solid #60A5FA;
+      font-weight: 600;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 9999px; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div id="mobileBackdrop" class="fixed inset-0 bg-slate-900/40 z-30 hidden lg:hidden" onclick="window.LegalApp.toggleMobileSidebar(false)"></div>
+
+  <div class="flex min-h-screen">
+    <!-- Left Sidebar (Styled dynamically per Portal: User = Light Navy-Accented, Admin = Deep Navy) -->
+    <aside id="sidebar" class="fixed lg:sticky top-0 left-0 z-40 h-screen w-64 bg-white border-r border-slate-200 flex flex-col -translate-x-full lg:translate-x-0 transition-transform">
+      <div id="sidebarHeader" class="h-16 px-4 border-b border-slate-200 flex items-center justify-between shrink-0">
+        <button onclick="window.LegalApp.navigate(window.LegalApp.state.portal === 'admin' ? 'admin-dashboard' : 'home')" class="flex items-center gap-2.5 text-left">
+          <div id="brandLogoBox" class="w-9 h-9 rounded-xl bg-[#0F2544] text-white flex items-center justify-center shrink-0">
+            <i data-lucide="scale" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div id="brandTitle" class="text-sm font-bold tracking-tight text-[#0F2544] leading-tight">LEGAL AI</div>
+            <div id="brandSubtitle" class="text-[11px] text-slate-500">User Portal</div>
+          </div>
+        </button>
+        <button onclick="window.LegalApp.toggleMobileSidebar(false)" class="lg:hidden p-1.5 rounded-md text-slate-400 hover:bg-slate-100">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <nav id="sidebarNav" class="flex-1 py-3 overflow-y-auto space-y-0.5"></nav>
+
+      <!-- Portal Switcher & Disclaimer Footer -->
+      <div id="sidebarFooter" class="p-3 border-t border-slate-200 space-y-2 shrink-0">
+        <div id="portalSwitchSlot"></div>
+        <div id="sidebarModeBox" class="rounded-xl bg-[#EFF6FF] border border-blue-200 px-3 py-2 text-[11px] text-slate-700">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-[#0F2544]">Chế độ AI</span>
+            <span id="sidebarModeTag" class="px-1.5 py-0.5 rounded font-bold text-[10px] bg-white text-[#1D4ED8] border border-blue-200">DEMO</span>
+          </div>
+          <p class="mt-1 leading-snug text-slate-600">Hỗ trợ tra cứu & dẫn nguồn, không thay thế tư vấn pháp lý chính thức.</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Shell -->
+    <div class="flex-1 flex flex-col min-w-0">
+      <header class="h-16 bg-white border-b border-slate-200 px-4 lg:px-6 flex items-center justify-between sticky top-0 z-20">
+        <div class="flex items-center gap-3 min-w-0">
+          <button onclick="window.LegalApp.toggleMobileSidebar(true)" class="lg:hidden p-2 rounded-lg text-[#0F2544] hover:bg-slate-100" aria-label="Mở menu">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+          <div class="min-w-0">
+            <div class="flex items-center gap-2">
+              <span id="portalPill" class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#EFF6FF] text-[#1D4ED8]">USER PORTAL</span>
+              <h1 id="pageTitle" class="text-base font-bold text-[#0F2544] truncate">Trang chủ</h1>
+            </div>
+            <p id="pageSubtitle" class="text-xs text-slate-500 truncate hidden sm:block">Trợ lý tra cứu pháp luật sử dụng RAG, Multi-Agent và Citation Validator</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2.5 shrink-0">
+          <span id="headerModeBadge" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold badge-warn">
+            <span>DEMO MODE</span>
+          </span>
+          <a href="/docs" target="_blank" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium btn-soft">
+            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+            <span>Swagger API</span>
+          </a>
+          <button id="headerAccountBtn" onclick="window.LegalApp.navigate('account')"
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 bg-white hover:bg-slate-50 text-[#0F2544]">
+            <i data-lucide="user" class="w-3.5 h-3.5"></i>
+            <span id="headerUserLabel">Đăng nhập</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="mainContent" class="flex-1 p-4 lg:p-6 max-w-7xl w-full mx-auto"></main>
+    </div>
+  </div>
+
+  <!-- Source Legal Document Modal -->
+  <div id="docModal" class="fixed inset-0 z-50 hidden bg-slate-900/50 flex items-center justify-center p-4" onclick="if(event.target===this)window.LegalApp.closeSourceDocModal()">
+    <div class="bg-white rounded-2xl shadow-xl border border-slate-200 max-w-4xl w-full max-h-[85vh] flex flex-col overflow-hidden">
+      <div class="px-5 py-4 border-b border-slate-200 flex items-center justify-between bg-[#0F2544] text-white">
+        <h3 id="docModalTitle" class="text-sm font-bold truncate pr-4">Nội dung văn bản gốc</h3>
+        <button onclick="window.LegalApp.closeSourceDocModal()" class="p-1 rounded hover:bg-white/15">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div id="docModalBody" class="p-5 overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 hidden max-w-md rounded-xl px-4 py-3 text-sm font-medium shadow-lg border bg-white text-slate-800"></div>
+
+  <!-- Structured metadata labels template (ensures SSR/HTML contract visibility for Admin Documents table) -->
+  <template id="adminDocumentColumnsContract" data-scan-endpoint="/api/legal-documents/scan" data-stats-endpoint="/api/legal-documents/stats">
+    STT | Tên văn bản | Số hiệu | Loại văn bản | Cơ quan ban hành | Ngày ban hành | Ngày hiệu lực | Trạng thái | Số lượng chunk | Trạng thái đồng bộ Qdrant | Quét thư mục & Đồng bộ dữ liệu | Tất cả cơ quan ban hành | Tất cả loại văn bản | Chưa có dữ liệu văn bản pháp luật. Vui lòng thêm văn bản vào thư mục data/legal_documents/ và thực hiện đồng bộ.
+  </template>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/user-portal.js"></script>
+  <script src="/static/js/admin-portal.js"></script>
+  <script>
+    (function (ns) {
+      const { api, auth, toast, esc } = ns;
+
+      ns.state = {
+        portal: window.location.pathname.startsWith('/admin') ? 'admin' : 'user',
+        currentPage: window.location.pathname.startsWith('/admin') ? 'admin-dashboard' : 'home',
+        appMode: 'demo',
+        currentUser: auth.getCachedUser(),
+        activeConversationId: null,
+        chatMessages: [],
+        lastChatResponse: null,
+        pendingQuestion: null,
+        simulateSelfCorrection: false,
+        userDocFilters: { search: '', document_type: '', status: '' },
+        adminDocFilters: { search: '', document_type: '', issuing_authority: '' },
+        adminAllowUpdate: false,
+        historySearch: '',
+        savedTab: '',
+        citFilter: '',
+      };
+
+      ns.toggleMobileSidebar = function (show) {
+        const sb = document.getElementById('sidebar');
+        const bd = document.getElementById('mobileBackdrop');
+        if (!sb || !bd) return;
+        if (show) {
+          sb.classList.remove('-translate-x-full');
+          bd.classList.remove('hidden');
+        } else {
+          sb.classList.add('-translate-x-full');
+          bd.classList.add('hidden');
+        }
+      };
+
+      ns.switchPortal = function (portal) {
+        ns.state.portal = portal;
+        ns.state.currentPage = portal === 'admin' ? 'admin-dashboard' : 'home';
+        const targetPath = portal === 'admin' ? '/admin' : '/user';
+        try { window.history.replaceState({}, '', targetPath); } catch {}
+        ns.syncHeaderChrome();
+        ns.renderCurrentPage();
+      };
+
+      ns.navigate = function (pageId) {
+        if (pageId.startsWith('admin-')) {
+          ns.state.portal = 'admin';
+        } else {
+          ns.state.portal = 'user';
+        }
+        ns.state.currentPage = pageId;
+        ns.toggleMobileSidebar(false);
+        ns.syncHeaderChrome();
+        ns.renderCurrentPage();
+      };
+
+      ns.syncHeaderChrome = function () {
+        const isAdmin = ns.state.portal === 'admin';
+        const sb = document.getElementById('sidebar');
+        const sbHeader = document.getElementById('sidebarHeader');
+        const sbFooter = document.getElementById('sidebarFooter');
+        const brandTitle = document.getElementById('brandTitle');
+        const brandSubtitle = document.getElementById('brandSubtitle');
+        const brandLogoBox = document.getElementById('brandLogoBox');
+        const portalPill = document.getElementById('portalPill');
+        const modeTag = document.getElementById('sidebarModeTag');
+        const headerMode = document.getElementById('headerModeBadge');
+        const userLabel = document.getElementById('headerUserLabel');
+        const switchSlot = document.getElementById('portalSwitchSlot');
+
+        if (isAdmin) {
+          sb.className = 'fixed lg:sticky top-0 left-0 z-40 h-screen w-64 bg-[#0F2544] text-slate-100 border-r border-slate-800 flex flex-col -translate-x-full lg:translate-x-0 transition-transform';
+          sbHeader.className = 'h-16 px-4 border-b border-slate-800 flex items-center justify-between shrink-0';
+          sbFooter.className = 'p-3 border-t border-slate-800 space-y-2 shrink-0';
+          brandTitle.className = 'text-sm font-bold tracking-tight text-white leading-tight';
+          brandSubtitle.className = 'text-[11px] text-blue-200';
+          brandSubtitle.textContent = 'Admin Portal';
+          brandLogoBox.className = 'w-9 h-9 rounded-xl bg-[#2563EB] text-white flex items-center justify-center shrink-0';
+          portalPill.textContent = 'ADMIN PORTAL';
+          portalPill.className = 'px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#0F2544] text-white';
+        } else {
+          sb.className = 'fixed lg:sticky top-0 left-0 z-40 h-screen w-64 bg-white text-slate-800 border-r border-slate-200 flex flex-col -translate-x-full lg:translate-x-0 transition-transform';
+          sbHeader.className = 'h-16 px-4 border-b border-slate-200 flex items-center justify-between shrink-0';
+          sbFooter.className = 'p-3 border-t border-slate-200 space-y-2 shrink-0';
+          brandTitle.className = 'text-sm font-bold tracking-tight text-[#0F2544] leading-tight';
+          brandSubtitle.className = 'text-[11px] text-slate-500';
+          brandSubtitle.textContent = 'User Portal';
+          brandLogoBox.className = 'w-9 h-9 rounded-xl bg-[#0F2544] text-white flex items-center justify-center shrink-0';
+          portalPill.textContent = 'USER PORTAL';
+          portalPill.className = 'px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#EFF6FF] text-[#1D4ED8]';
+        }
+
+        const modeUp = (ns.state.appMode || 'demo').toUpperCase();
+        if (modeTag) modeTag.textContent = modeUp;
+        if (headerMode) {
+          headerMode.className = `inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold ${modeUp === 'LIVE' ? 'badge-pass' : 'badge-warn'}`;
+          headerMode.innerHTML = `<span class="w-2 h-2 rounded-full ${modeUp === 'LIVE' ? 'bg-emerald-600' : 'bg-amber-500'}"></span><span>${modeUp} MODE</span>`;
+        }
+
+        if (userLabel) {
+          userLabel.textContent = ns.state.currentUser ? ns.state.currentUser.username : 'Đăng nhập';
+        }
+
+        if (switchSlot) {
+          if (isAdmin) {
+            switchSlot.innerHTML = `
+              <button onclick="window.LegalApp.switchPortal('user')"
+                class="w-full py-2 px-3 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs font-semibold inline-flex items-center justify-center gap-2">
+                <i data-lucide="arrow-left-right" class="w-3.5 h-3.5"></i>
+                <span>Sang User Portal</span>
+              </button>
+            `;
+          } else if (ns.state.currentUser && ns.state.currentUser.role === 'admin') {
+            switchSlot.innerHTML = `
+              <button onclick="window.LegalApp.switchPortal('admin')"
+                class="w-full py-2 px-3 rounded-lg btn-navy text-xs font-semibold inline-flex items-center justify-center gap-2">
+                <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+                <span>Mở Admin Portal</span>
+              </button>
+            `;
+          } else {
+            switchSlot.innerHTML = `
+              <button onclick="window.LegalApp.switchPortal('admin')"
+                class="w-full py-2 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold inline-flex items-center justify-center gap-2">
+                <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+                <span>Cổng Quản trị (Admin)</span>
+              </button>
+            `;
+          }
+        }
+
+        // Render Sidebar Navigation for active Portal ONLY
+        const navItems = isAdmin ? ns.ADMIN_NAV : ns.USER_NAV;
+        const navEl = document.getElementById('sidebarNav');
+        if (navEl) {
+          navEl.innerHTML = navItems.map((item) => {
+            const active = ns.state.currentPage === item.id;
+            const cls = isAdmin
+              ? (active ? 'nav-active-admin' : 'text-slate-300 hover:bg-white/10 hover:text-white')
+              : (active ? 'nav-active-user' : 'text-slate-700 hover:bg-slate-50');
+            return `
+              <button onclick="window.LegalApp.navigate('${item.id}')"
+                class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left transition ${cls}">
+                <i data-lucide="${item.icon}" class="w-4 h-4 shrink-0"></i>
+                <span class="truncate">${esc(item.label)}</span>
+              </button>
+            `;
+          }).join('');
+        }
+
+        const activeItem = navItems.find((i) => i.id === ns.state.currentPage) || navItems[0];
+        if (activeItem) {
+          document.getElementById('pageTitle').textContent = activeItem.label;
+          document.getElementById('pageSubtitle').textContent = activeItem.subtitle;
+        }
+        lucide.createIcons();
+      };
+
+      ns.renderCurrentPage = async function () {
+        const main = document.getElementById('mainContent');
+        if (!main) return;
+        try {
+          if (ns.state.portal === 'admin') {
+            if (!ns.state.currentUser || ns.state.currentUser.role !== 'admin') {
+              main.innerHTML = ns.renderAuthForms(true);
+              lucide.createIcons();
+              return;
+            }
+            const adminHandlers = {
+              'admin-dashboard': ns.renderAdminDashboard,
+              'admin-documents': ns.renderAdminDocuments,
+              'admin-rag': ns.renderAdminRag,
+              'admin-agent': ns.renderAdminAgent,
+              'admin-citations': ns.renderAdminCitations,
+              'admin-testing': ns.renderAdminTesting,
+              'admin-users': ns.renderAdminUsers,
+              'admin-config': ns.renderAdminConfig,
+            };
+            const fn = adminHandlers[ns.state.currentPage] || ns.renderAdminDashboard;
+            await fn(main);
+            return;
+          }
+
+          const userHandlers = {
+            home: ns.renderUserHome,
+            chat: ns.renderUserChat,
+            process: ns.renderUserProcess,
+            result: ns.renderUserResult,
+            documents: ns.renderUserDocuments,
+            history: ns.renderUserHistory,
+            saved: ns.renderUserSaved,
+            account: ns.renderUserAccount,
+          };
+          const fn = userHandlers[ns.state.currentPage] || ns.renderUserHome;
+          await fn(main);
+        } catch (err) {
+          if (err && (err.status === 401 || err.status === 403)) {
+            main.innerHTML = ns.renderAuthForms(ns.state.portal === 'admin');
+            lucide.createIcons();
+            return;
+          }
+          main.innerHTML = `
+            <div class="card p-6 border-red-200 bg-red-50 text-red-800 text-sm space-y-2">
+              <div class="font-bold">Không thể tải trang</div>
+              <div>${esc(err && err.message ? err.message : 'Lỗi không xác định')}</div>
+              <button onclick="window.LegalApp.renderCurrentPage()" class="btn-navy px-3 py-1.5 rounded-lg text-xs font-semibold">Thử lại</button>
+            </div>
+          `;
+        }
+      };
+
+      // Auth actions
+      ns.submitLogin = async function (redirectAdmin) {
+        const identifier = document.getElementById('loginIdent')?.value?.trim();
+        const password = document.getElementById('loginPwd')?.value || '';
+        if (!identifier || !password) {
+          toast('Vui lòng nhập đầy đủ thông tin đăng nhập.', 'warn');
+          return;
+        }
+        try {
+          const res = await api('/api/auth/login', {
+            method: 'POST',
+            body: JSON.stringify({ identifier, password }),
+          });
+          auth.setSession(res.access_token, res.user);
+          ns.state.currentUser = res.user;
+          toast(`Xin chào ${res.user.full_name}!`, 'success');
+          if (redirectAdmin && res.user.role === 'admin') {
+            ns.switchPortal('admin');
+          } else if (redirectAdmin && res.user.role !== 'admin') {
+            toast('Tài khoản này không có quyền Quản trị viên.', 'error');
+            ns.switchPortal('user');
+          } else {
+            ns.syncHeaderChrome();
+            ns.renderCurrentPage();
+          }
+        } catch (e) {
+          toast(e.message, 'error');
+        }
+      };
+
+      ns.submitRegister = async function () {
+        const payload = {
+          full_name: document.getElementById('regName')?.value?.trim() || '',
+          username: document.getElementById('regUser')?.value?.trim() || '',
+          email: document.getElementById('regEmail')?.value?.trim() || '',
+          password: document.getElementById('regPwd')?.value || '',
+        };
+        try {
+          const res = await api('/api/auth/register', { method: 'POST', body: JSON.stringify(payload) });
+          auth.setSession(res.access_token, res.user);
+          ns.state.currentUser = res.user;
+          toast('Đăng ký thành công!', 'success');
+          ns.syncHeaderChrome();
+          ns.renderCurrentPage();
+        } catch (e) {
+          toast(e.message, 'error');
+        }
+      };
+
+      ns.updateProfile = async function () {
+        const full_name = document.getElementById('profileFullName')?.value?.trim();
+        if (!full_name) return;
+        try {
+          const user = await api('/api/auth/me', { method: 'PUT', body: JSON.stringify({ full_name }) });
+          auth.setSession(auth.getToken(), user);
+          ns.state.currentUser = user;
+          toast('Đã cập nhật thông tin cá nhân.', 'success');
+          ns.syncHeaderChrome();
+          ns.renderCurrentPage();
+        } catch (e) {
+          toast(e.message, 'error');
+        }
+      };
+
+      ns.changePassword = async function () {
+        const current_password = document.getElementById('curPwd')?.value || '';
+        const new_password = document.getElementById('newPwd')?.value || '';
+        try {
+          const res = await api('/api/auth/change-password', {
+            method: 'POST',
+            body: JSON.stringify({ current_password, new_password }),
+          });
+          toast(res.message, 'success');
+          document.getElementById('curPwd').value = '';
+          document.getElementById('newPwd').value = '';
+        } catch (e) {
+          toast(e.message, 'error');
+        }
+      };
+
+      ns.logout = async function () {
+        try {
+          await api('/api/auth/logout', { method: 'POST' });
+        } catch {}
+        auth.clearSession();
+        ns.state.currentUser = null;
+        toast('Đã đăng xuất.', 'info');
+        ns.switchPortal('user');
+      };
+
+      // Bootstrapping
+      async function init() {
+        const status = await api('/api/status').catch(() => null);
+        if (status && status.app_mode) {
+          ns.state.appMode = status.app_mode;
+        }
+        if (auth.getToken()) {
+          try {
+            const me = await api('/api/auth/me');
+            ns.state.currentUser = me;
+            auth.setSession(auth.getToken(), me);
+          } catch {
+            auth.clearSession();
+            ns.state.currentUser = null;
+          }
+        }
+        ns.syncHeaderChrome();
+        await ns.renderCurrentPage();
+      }
+
+      window.addEventListener('DOMContentLoaded', init);
+    })(window.LegalApp);
+  </script>
+</body>
+</html>

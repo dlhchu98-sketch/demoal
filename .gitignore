@@ -1,0 +1,16 @@
+.env
+.env.local
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/qdrant_storage/
+data/legal_documents/*
+!data/legal_documents/.gitkeep
+frontend/node_modules/
+frontend/.next/
+.DS_Store
+Thumbs.db
